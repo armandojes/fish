@@ -17,6 +17,7 @@ const config = {
         exclude: "/(node_modules)/",
         options: {
           presets: ['@babel/preset-env','@babel/preset-react'],
+          // plugins: ['styled-jsx/babel']
         },
       },
       {
@@ -24,6 +25,9 @@ const config = {
         use: [MiniCssExtractPlugin.loader, "css-loader?modules=true&localIdentName=[hash:base64:15]"]
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.css']
   },
   plugins: [
     new MiniCssExtractPlugin({
