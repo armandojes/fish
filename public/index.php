@@ -12,5 +12,8 @@ define('BASE', 'http://localhost');
     <div id="render_target"></div>
     <script src="/public/app.js" charset="utf-8"></script>
     <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/public/github.css" />
+    <link rel="stylesheet" href="/public/github1.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   </body>
 </html>

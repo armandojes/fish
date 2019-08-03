@@ -1,0 +1,27 @@
+.header_ext{
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
+}
+.header_int{
+  height: 30px;
+}
+.shadow_header{
+  height: 50px;
+}
+.header_int{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  display: block;
+}
+.link{
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 1.1em;
+  font-weight: bold;
+}

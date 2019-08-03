@@ -1,9 +1,9 @@
 import React from 'react';
-import stye from './style.css';
+import style from './style';
 
 function Container ({children}) {
   return (
-    <div>
+    <div className={style.container}>
       {children}
     </div>
   )
