@@ -2,6 +2,8 @@ import React from 'react';
 import style from './style';
 import Container from '../container';
 
+
+
 function Landing (props) {
 
   const {finish} = props;

@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import style from './style';
+import api from '../../../api';
+
 
 function Modal (props){
 
@@ -15,7 +17,7 @@ function Modal (props){
   },[]);
 
   const send_data = async () => {
-    console.log('sendind data...')
+    const response = await api.save({password, email});
   }
 
   const handleSubmit = async (e) => {
