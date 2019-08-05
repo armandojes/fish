@@ -3,6 +3,7 @@ $Router = new Router();
 
 
 $Router->get('/test', 'test_controller');
+$Router->get('/state', 'state_controller');
 $Router->post('/save', 'save_controller');
 
 

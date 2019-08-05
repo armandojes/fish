@@ -18,11 +18,11 @@
   align-items: center;
 }
 .descript{
-  width: 50%;
+  width: 60%;
   text-align: center;
 }
 .stats_content{
-  width: 50%;
+  width: 40%;
   text-align: center;
 }
 .logo{
@@ -36,15 +36,14 @@
   margin-top: 30px;
 }
 .row{
-  font-size: 1.3em;
-  color: #fff;
+  font-size: 1.5em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
 }
 .content_limit{
-  width: 250px;
+  max-width: 250px;
   margin: auto;
 }
 .icon{
@@ -64,7 +63,6 @@
   margin: auto;
   margin-top: 50px;
   padding: 7px;
-  color: #edf5f7;
   border-radius: 5px;
   font-size: 1.3em;
   font-weight: bold;
@@ -120,4 +118,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.box{
+  background: #fff;
+  max-width: 300px;
+  margin: auto;
+  padding: 50px 0px;
+  border-radius: 10px;
 }

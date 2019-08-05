@@ -16,7 +16,14 @@ const api = {
       url: '/save',
       data,
     });
-  }
+  },
+  get_state (){
+    return connect({
+      'method': 'get',
+      'url': '/state',
+    })
+  },
+
 }
 
 export default api;

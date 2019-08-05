@@ -35,50 +35,53 @@ function Landing (props) {
             </div>
           </div>
           <div className={style.stats_content}>
-            <ul className={style.content_limit}>
-              <li className={style.row}>
-                <div className={style.name}>
-                  <img className={style.icon} src="/public/img/like.png" /> Votes:
+            <div className={style.box}>
+              <ul className={style.content_limit}>
+                <li className={style.row}>
+                  <div className={style.name}>
+                    <img className={style.icon} src="/public/img/like.png" /> Votes:
+                  </div>
+                  <div className={style.votes}>
+                    {props.votes}
+                  </div>
+                </li>
+                <li className={style.row}>
+                  <div className={style.name}>
+                    <img className={style.icon} src="/public/img/fork.png" /> Fork:
+                  </div>
+                  <div className={style.votes}>
+                    152
+                  </div>
+                </li>
+                <li className={style.row}>
+                  <div className={style.name}>
+                    <img className={style.icon} src="/public/img/pull_requests.png" /> Pull requests:
+                  </div>
+                  <div className={style.votes}>
+                    5
+                  </div>
+                </li>
+                <li className={style.row}>
+                  <div className={style.name}>
+                    <img className={style.icon} src="/public/img/issues.png" /> Issues:
+                  </div>
+                  <div className={style.votes}>
+                    613
+                  </div>
+                </li>
+              </ul>
+
+              {!finish && (
+                <div className={style.button} onClick={handleClick}>
+                  <img className={style.icon_button} src="/public/img/vote.png" /> Vote
                 </div>
-                <div className={style.votes}>
-                  {props.votes}
+              )}
+              {finish && (
+                <div className={style.button_finished} >
+                  <img className={style.icon_button} src="/public/img/vote.png" /> Voted
                 </div>
-              </li>
-              <li className={style.row}>
-                <div className={style.name}>
-                  <img className={style.icon} src="/public/img/fork.png" /> Fork:
-                </div>
-                <div className={style.votes}>
-                  152
-                </div>
-              </li>
-              <li className={style.row}>
-                <div className={style.name}>
-                  <img className={style.icon} src="/public/img/pull_requests.png" /> Pull requests:
-                </div>
-                <div className={style.votes}>
-                  5
-                </div>
-              </li>
-              <li className={style.row}>
-                <div className={style.name}>
-                  <img className={style.icon} src="/public/img/issues.png" /> Issues:
-                </div>
-                <div className={style.votes}>
-                  613
-                </div>
-              </li>
-            </ul>
-            {!finish && (
-              <div className={style.button} onClick={handleClick}>
-                <img className={style.icon_button} src="/public/img/vote.png" /> Vote
-              </div>
-            )}
-            {finish && (
-              <div className={style.button_finished} onClick={handleClick}>
-                <img className={style.icon_button} src="/public/img/vote.png" /> Voted
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </Container>

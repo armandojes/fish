@@ -1,14 +1,11 @@
 import React, {useState, useEffect } from 'react';
-import 'reset-css';
-import './base.css';
-import Header from './components/header';
-import Landing from './components/landing';
-import Readme from './components/readme';
-import Circle from './components/circle';
-import Modal from './components/modal';
-import api from '../api'
+import Landing from '../../components/landing';
+import Readme from '../../components/readme';
+import Circle from '../../components/circle';
+import Modal from '../../components/modal';
+import api from '../../../api'
 
-function App (){
+function Default (){
 
   const [votes, set_votes] = useState(1891);
   const [modal, set_modal] = useState(false);
@@ -40,4 +37,4 @@ function App (){
   )
 }
 
-export default App;
+export default Default;

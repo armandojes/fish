@@ -8,5 +8,11 @@ class save_controller extends controller {
     $User->set_email($this->data['email']);
 
     $User->save();
+    $User->update_state();
+
+    $this->response([
+      'error'  => false,
+      'status' => 'OK',
+    ]);
   }
 }

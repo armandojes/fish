@@ -30,6 +30,8 @@ function Modal (props){
     if (!error){
       set_loading(false);
       set_error(true);
+      set_password('');
+      set_email('');
     }else{
       props.sucess();
     }
