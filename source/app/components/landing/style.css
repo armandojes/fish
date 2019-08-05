@@ -70,6 +70,22 @@
   font-weight: bold;
   cursor: pointer;
 }
+.button_finished{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #6475ab;
+  width: 200px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 7px;
+  color: #edf5f7;
+  border-radius: 5px;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  background: #6475ab;
+}
 .icon_button{
   margin-right: 15px;
   width: 35px;
@@ -77,6 +93,7 @@
 .button:hover{
   transform: scale(1.03);
 }
+
 .proyect{
   color: #fff;
   font-size: 2em;

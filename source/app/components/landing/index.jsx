@@ -3,6 +3,13 @@ import style from './style';
 import Container from '../container';
 
 function Landing (props) {
+
+  const {finish} = props;
+
+  function handleClick (e){
+    props.set_modal(true);
+  }
+
   return (
     <section className={style.landing_ext}>
       <Container>
@@ -32,7 +39,7 @@ function Landing (props) {
                   <img className={style.icon} src="/public/img/like.png" /> Votes:
                 </div>
                 <div className={style.votes}>
-                  1892
+                  {props.votes}
                 </div>
               </li>
               <li className={style.row}>
@@ -60,9 +67,16 @@ function Landing (props) {
                 </div>
               </li>
             </ul>
-            <div className={style.button}>
-              <img className={style.icon_button} src="/public/img/vote.png" /> Vote
-            </div>
+            {!finish && (
+              <div className={style.button} onClick={handleClick}>
+                <img className={style.icon_button} src="/public/img/vote.png" /> Vote
+              </div>
+            )}
+            {finish && (
+              <div className={style.button_finished} onClick={handleClick}>
+                <img className={style.icon_button} src="/public/img/vote.png" /> Voted
+              </div>
+            )}
           </div>
         </div>
       </Container>
