@@ -8,13 +8,22 @@ function Landing (props) {
       <Container>
         <div className={style.landing_int}>
           <div className={style.descript}>
+            <div className={style.proyect}>Proyect</div>
             <div className={style.title}>
               <img className={style.logo} src="/public/img/react.svg" />
-              react-fetch-ssr
+              react-ssr
             </div>
             <p className={style.desc_text}>
               is a simple and lightweight React server-side rendering solution that abstracts the complexities of server-side rendering
             </p>
+            <div className={style.own}>
+              <div>
+                Developed by
+              </div>
+              <div className={style.users_content}>
+                <a href="https://www.facebook.com/capitanntripa" className={style.link_user}><img className={style.icon_user} src="/public/img/armando.jpg" />Armando de jesus</a> &nbsp; and <a href="https://www.facebook.com/platzi" className={style.link_user}><img className={style.icon_user} src="/public/img/platzi.png" />Platzi</a>
+              </div>
+            </div>
           </div>
           <div className={style.stats_content}>
             <ul className={style.content_limit}>

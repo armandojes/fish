@@ -2,7 +2,6 @@
   background-image: url('/public/img/background.png');
   overflow: hidden;
 }
-
 .landing_int{
   display: flex;
   justify-content: space-between;
@@ -11,7 +10,7 @@
 }
 .title{
   color: #61dafb;
-  font-size: 2.5em;
+  font-size: 3em;
   width: 100%;
   text-align: center;
   display: flex;
@@ -31,12 +30,13 @@
   margin-right: 10px;
 }
 .desc_text{
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: #fff;
   line-height: 1.5em;
   margin-top: 30px;
 }
 .row{
+  font-size: 1.3em;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -76,4 +76,31 @@
 }
 .button:hover{
   transform: scale(1.03);
+}
+.proyect{
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 29px;
+}
+.own{
+  color: #fff;
+  font-size: 1.4em;
+  margin-top: 40px;
+}
+.icon_user{
+  width: 35px;
+  margin: 0px 10px;
+  border-radius: 50%;
+}
+.link_user{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.users_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
