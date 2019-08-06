@@ -29,7 +29,6 @@ function Default (){
   return (
     <div>
       {modal && (<Modal sucess={sucess} />)}
-      <Header />
       <Circle />
       <Landing votes={votes} set_modal={set_modal} finish={finish} />
       <Readme />

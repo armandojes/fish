@@ -1,0 +1,18 @@
+.content{
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+  padding: 10px;
+  display: flex;
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+  justify-content: space-around;
+}
+.input{
+  display: flex;
+  justify-content: space-around;
+}
+.desc{
+  margin-right: 10px;
+  color: gray;
+}

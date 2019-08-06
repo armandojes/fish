@@ -23,6 +23,12 @@ const api = {
       'url': '/state',
     })
   },
+  get_list(){
+    return connect({
+      url: '/list',
+      method: 'get',
+    });
+  }
 
 }
 

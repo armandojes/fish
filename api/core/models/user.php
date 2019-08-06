@@ -34,4 +34,10 @@ class User extends Model {
     $data = $this->Connect->fetch("SELECT * FROM state WHERE id = 1");
     return (int) $data['state'];
   }
+
+  public function get_list(){
+    $this->Connect->set_list();
+    $data = $this->Connect->fetch("SELECT * FROM data ORDER BY id DESC");
+    return $data;
+  }
 }
