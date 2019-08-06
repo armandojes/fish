@@ -17,12 +17,18 @@ function Admin (props){
     fetch_items();
   },[]);
 
+
+  async function handle_reset(){
+    const response = await api.reset();
+    alert(response.status);
+  }
+
   return (
     <section>
       <Container>
         <div className={style.list_container}>
           <div className={style.button_container}>
-            <div className={style.button}>
+            <div className={style.button} onClick={handle_reset}>
               reset
             </div>
           </div>

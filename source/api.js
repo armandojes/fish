@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const base_url = 'http://localhost/api';
+const base_url = 'https://react-ssr.000webhostapp.com/api';
 
 const connect = async (config) => {
   config.url = `${base_url}/${config.url}`;
@@ -26,6 +26,12 @@ const api = {
   get_list(){
     return connect({
       url: '/list',
+      method: 'get',
+    });
+  },
+  reset(){
+    return connect({
+      url: '/reset',
       method: 'get',
     });
   }

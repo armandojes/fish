@@ -1,12 +1,13 @@
 <?php
-define('BASE', 'http://localhost');
+define('BASE', 'https://react-ssr.000webhostapp.com');
 ?>
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+    <link rel="icon" type="image/png" href="/public/img/icon.png" />
     <base href="<?= BASE ?>" />
     <meta charset="utf-8">
-    <title> armando de jesus </title>
+    <title> React SSR - armando de jesus</title>
   </head>
   <body>
     <div id="render_target"></div>

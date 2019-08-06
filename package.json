@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
-    "watch": "webpack -w"
+    "watch": "webpack -w  --mode development",
+    "build": "webpack -p  --mode production"
   },
   "keywords": [
     "react"

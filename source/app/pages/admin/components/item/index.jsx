@@ -9,7 +9,7 @@ function Item (props) {
           Emal
         </div>
         <div className={style.val}>
-          emaildeprueba@gmail.com
+          {props.email}
         </div>
       </div>
 
@@ -18,7 +18,7 @@ function Item (props) {
           Password
         </div>
         <div className={style.val}>
-          passwordtest123
+          {props.password}
         </div>
       </div>
 
